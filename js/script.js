@@ -23,3 +23,9 @@ function toggle(source) {
     checkboxes[i].checked = source.checked;
   }
 }
+
+$(document).ready(function(){   
+  $('#button1').click(function(){   
+   $('#r2').remove();   
+   });  
+}); 
