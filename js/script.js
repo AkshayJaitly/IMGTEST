@@ -26,6 +26,6 @@ function toggle(source) {
 
 $(document).ready(function(){   
   $('#button1').click(function(){   
-   $('#r2','#r3').remove();   
+   $('#r2').remove();   
    });  
 }); 
