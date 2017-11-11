@@ -1,253 +1,147 @@
 	
 <!DOCTYPE html>
-	<html lang="en">
-	
+<html lang="en">
 
-	  <head>
-	
+  <head>
 
-	    <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	    <meta name="description" content="">
-	    <meta name="author" content="">
-	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-	    <title>1969 Home</title>
-	    <!-- Bootstrap core CSS -->
-	    <link href="css/bootstrap.min.css" rel="stylesheet">
-	
+    <title>1969 Home</title>
 
-	    <!-- Custom fonts for this template -->
-	
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-	    <link href="css/font-awesome.min1.css" rel="stylesheet" type="text/css">
-	    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-	    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	    <!-- Custom styles for this template -->
-	    <link href="css/freelancer.min.css" rel="stylesheet">
-	
+    <!-- Custom fonts for this template -->
 
-	
+    <link href="css/font-awesome.min1.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 
-	    <link rel="stylesheet" href="css/tableCSS.css">
-	
-
-	 </head>
-	<body id="page-top">
-	
-
-	    <!-- Navigation -->
-	    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-	      <div class="container">
-	        <a class="navbar-brand js-scroll-trigger" href="index.html">1969</a>
-	        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-	          Menu
-	          <i class="fa fa-bars"></i>
-	        </button>
-	         <div class="collapse navbar-collapse" id="navbarResponsive">
-	          <ul class="navbar-nav ml-auto">
-	
-
-	            <li class="nav-item top-bar-menu" style="padding-right: 20px;">
-	                
-	              <a  class="nav-link js-scroll-trigger" href="search.html" >Search</a>
-	                
-	                   
-	            </li>
-	            <li class="nav-item top-bar-menu1">
-	              <a class="nav-link js-scroll-trigger" href="qualify.html">Qualify</a>
-	            </li>
-	
-
-	          
-	            <li class="nav-item top-bar-menu2">
-	              <a class="nav-link js-scroll-trigger" href="disqualify.html">Disqualify</a>
-
-	            </li>
-	              
-	          </ul>
-	        </div>
-	      </div>
-	    </nav>
-	<!-- Header -->
-	    <header class="masthead">
-	      <div class="container">
-	        <img class="img-fluid" src="img/1969logo.png" alt="">
-	         <div class="intro-text">
-	
-
-	 <input type="text" id="Item" class="search-key" placeholder="Item">
-	       <input type="text" id="Brand" class="search-key" placeholder="Brand">
-	       <input type="text" id="ProductId" class="search-key" placeholder="ProductId">
-	        <input type="text" id="Model" class="search-key" placeholder="Model">
-	         <input type="text" id="Price" class="search-key" placeholder="Price">
-	          <input type="text" id="ListPrice" class="search-key" placeholder="ListPrice">
-	        
-	        <p></p>
-	        <table id="MI6" class="table table-striped table-hover">
-	             <thead>
-	              <th><input type="checkbox" onClick="toggle(this)" name="select_all"/><th>
-	              <th style="width:23%;">Item</th>
-	              <th style="width:23%;">Brand</th>
-	              <th style="width:23%;">ProductId</th>
-	              <th style="width:23%;">Model</th>
-	              <th style="width:23%;">Price($)</th>
-	              <th style="width:23%;">ListPrice($)</th>
-	            </thead>
-	            <tr>
-	                <th><input type="checkbox" name="foo"><th>
-	                <td data-input="Item">Ignition Coil</td>
-	                <td data-input="Brand">Bosch</td>
-	                <td data-input="ProductId">121</td>
-	              <td data-input="Model">2011 BMW X5</td>
-	              <td data-input="Price">24</td>
-	              <td data-input="ListPrice">79.14</td>
-	            </tr>
-			
-		    <tr>
-	                <th><input type="checkbox" name="foo"><th>
-	                <td data-input="Item">Coolant/Antifreeze</td>
-	                <td data-input="Brand">Genuine</td>
-	                <td data-input="ProductId">82</td>
-	              <td data-input="Model">2009 BMW 328i</td>
-	              <td data-input="Price">20.22</td>
-	              <td data-input="ListPrice">25.28</td>
-	            </tr>
-
-	            <tr>
-	                <th><input type="checkbox" name="foo"><th>
-	                <td data-input="Item">Ignition Coil</td>
-	                <td data-input="Brand">Sylvania</td>
-	                <td data-input="ProductId">143</td>
-	              <td data-input="Model">2017 Audi 8</td>
-	              <td data-input="Price">50</td>
-	              <td data-input="ListPrice">100.14</td>
-	            </tr>
-
-	            <tr>
-	                <th><input type="checkbox" name="foo"><th>
-	                <td data-input="Item">Ignition Coil</td>
-	                <td data-input="Brand">Sylvania</td>
-	                <td data-input="ProductId">150</td>
-	              <td data-input="Model">2013 Ford Fiesta</td>
-	              <td data-input="Price">40</td>
-	              <td data-input="ListPrice">300</td>
-	            </tr>
-			
-		    <tr>
-	                <th><input type="checkbox" name="foo"><th>
-	                <td data-input="Item">Intake Man. Gasket set</td>
-	                <td data-input="Brand">Victor Reinz</td>
-	                <td data-input="ProductId">113</td>
-	              <td data-input="Model">2010 BMW X5</td>
-	              <td data-input="Price">14.18</td>
-	              <td data-input="ListPrice">46.75</td>
-	            </tr>
+    <link rel="stylesheet" href="css/tableCSS.css">
 
 
-	             <tr>
-	                <th><input type="checkbox" name="foo"><th>
-	                <td data-input="Item">Ignition Coil</td>
-	                <td data-input="Brand">Sylvania</td>
-	                <td data-input="ProductId">122</td>
-	              <td data-input="Model">2003 honda</td>
-	              <td data-input="Price">27</td>
-	              <td data-input="ListPrice">77</td>
-	            </tr>
+  </head>
 
-	            <tr>
-	                <th><input type="checkbox" name="foo"><th>
-	                <td data-input="Item">Ignition Wire Set</td>
-	                <td data-input="Brand">Bosch</td>
-	                <td data-input="ProductId">123</td>
-	              <td data-input="Model">2014 Infiniti Q50</td>
-	              <td data-input="Price">40</td>
-	              <td data-input="ListPrice">400</td>
-	            </tr>
+  <body id="page-top">
 
-	            <tr>
-	                <th><input type="checkbox" name="foo"><th>
-	                <td data-input="Item">Ignition Wire Set</td>
-	                <td data-input="Brand">Bosch</td>
-	                <td data-input="ProductId">129</td>
-	              <td data-input="Model">2015 Audi R8</td>
-	              <td data-input="Price">50</td>
-	              <td data-input="ListPrice">79.14</td>
-	            </tr>
-                    
-		      <tr>
-	                <th><input type="checkbox" name="foo"><th>
-	                <td data-input="Item">Auto trans Fluid</td>
-	                <td data-input="Brand">Genuine</td>
-	                <td data-input="ProductId">120</td>
-	              <td data-input="Model">2012 Honda Odyssey</td>
-	              <td data-input="Price">6</td>
-	              <td data-input="ListPrice">8.15</td>
-	            </tr>
-	            <tr>
-	                <th><input type="checkbox" name="foo"><th>
-	                <td data-input="Item">Ignition Wire Set</td>
-	                <td data-input="Brand">Acdelco</td>
-	                <td data-input="ProductId">126</td>
-	              <td data-input="Model">2003 honda</td>
-	              <td data-input="Price">22</td>
-	              <td data-input="ListPrice">60</td>
-	            </tr>
-			
-			<tr>
-	                <th><input type="checkbox" name="foo"><th>
-	                <td data-input="Item">Brake Pad Set</td>
-	                <td data-input="Brand">Genuine</td>
-	                <td data-input="ProductId">34 10 6 872 333</td>
-	              <td data-input="Model">2017 BMW i8</td>
-	              <td data-input="Price">30</td>
-	              <td data-input="ListPrice">185.30</td>
-	            </tr>
-			
-			<tr>
-	                <th><input type="checkbox" name="foo"><th>
-	                <td data-input="Item">Flex Plate</td>
-	                <td data-input="Brand">Genuine</td>
-	                <td data-input="ProductId">34 10 6 872 334</td>
-	              <td data-input="Model">2016 Jaguar Xf</td>
-	              <td data-input="Price">94.55</td>
-	              <td data-input="ListPrice">155</td>
-	            </tr>
-			
-			<tr>
-	                <th><input type="checkbox" name="foo"><th>
-	                <td data-input="Item">Battery</td>
-	                <td data-input="Brand">Bosch</td>
-	                <td data-input="ProductId">S6585B</td>
-	              <td data-input="Model">2014 Ferrari Spider</td>
-	              <td data-input="Price">186.71</td>
-	              <td data-input="ListPrice">417.09</td>
-	            </tr>
-	    </table>
-	    <div class="container" style="position:realtive">
-            <button type="button" class="btn btn-warning">Qualify</button>
-	          <button type="button" class="btn btn-danger">Disqualify</button>
-	          <br>
-	         
-	          </div>
-	
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">1969</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+       <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
 
-	     <script src="js/script.js"></script>
-	</div>
-	</header>
-	
+            <li class="nav-item top-bar-menu" style="padding-right: 20px;">
+                
+              <a  class="nav-link js-scroll-trigger" href="adminDash.html" ><img id="searchLogo" src="img/search.png">Search</a>
+                
+                   
+            </li>
+            <li class="nav-item top-bar-menu1">
+              <a class="nav-link js-scroll-trigger" href="approved.html"><img id="thumbsUp" src="img/thumbsUp.png">Qualified</a>
 
-	 <!-- Bootstrap core JavaScript -->
-	    <script src="js/jquery.min.js"></script>
-	    <script src="js/bootstrap.min.js"></script>
-	
+            </li>
 
-	
+          
+            <li class="nav-item top-bar-menu2">
+              <a class="nav-link js-scroll-trigger" href="disapproved.html"><img id="thumbsDown" src="img/thumbsDown.png">DisQualified</a>
 
-	  </body>
-	
 
-	</html>
+            </li>
+              
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <img class="img-fluid" src="img/1969logo.png" alt="">
+        <div class="intro-text">
+          
+           <input type="text" id="emp.BrandName" class="search-key" placeholder="BrandName">
+       <input type="text" id="emp.Price" class="search-key" placeholder="Price">
+       <input type="text" id="emp.ProductId" class="search-key" placeholder="ProductId">
+        <input type="text" id="emp.QuantityAvail" class="search-key" placeholder="QuantityAvail">
+         <input type="text" id="emp.ListPrice" class="search-key" placeholder="ListPrice">
+         
+        
+        <p></p>
+         <body  ng-app="myapp" ng-controller="tableController">
+  <table id="MI6" class="table table-striped table-hover">
+            <thead><tr>
+                    <th><input type="checkbox" onClick="toggle(this)" name="select_all"/><th>
+                    <th style="width:23%;">BrandName</th>
+                    <th style="width:23%;">Price</th>
+                    <th style="width:23%;"> ProductId </th>
+                    <th style="width:23%;"> QuantityAvail </th>
+                    <th style="width:23%;"> ListPrice </th>
+                    </tr></thead>
+            <tbody>
+                <tr ng-repeat="emp in employees">
+                  <th><input type="checkbox" name="foo"><th>
+                    <td data-input="emp.BrandName"> {{ emp.BrandName }} </td>
+                    <td data-input="emp.Price"> {{emp.Price }} </td>
+                    <td data-input="emp.ProductId" >  {{emp.ProductId }}</td>
+                    <td data-input="emp.QuantityAvail">  {{emp.QuantityAvail }}</td>
+                    <td data-input="emp.ListPrice">  {{emp.ListPrice }}</td>
+                </tr>
+            </tbody>
+        </table>
+          <div class="container" style="position:realtive">
+          <button type="button" class="btn btn-warning">Qualify</button>
+           <button type="button" class="btn btn-danger">DisQualify </button>
+          <br>
+          <ul class="pagination" style="position:relative; left: 500px">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+          </ul>
+
+          </div>
+          <script src="js/script.js"></script>
+          <script type="text/javascript">
+
+    var app = angular.module("myapp", []);
+    app.controller("tableController", ['$scope', function ($scope) {
+
+   $scope.employees = [{"BrandName":"Bosch","Description":"Fog Light Kit 7\/15 NLA BOSCH","QuantityAvail":0,"Price":78.91,"ProductId":" 0 305 406 901","ListPrice":106.00},{"BrandName":"CCI Manufacturing","Description":"Coolant\/Antifreeze 1 Gallon - Pink","QuantityAvail":1,"Price":12.83,"ProductId":" 1285431\/168","ListPrice":22.60},{"BrandName":"Bosch","Description":"Tire Changer Accessory Tire Lift","QuantityAvail":0,"Price":1490.00,"ProductId":" 1695900025","ListPrice":2709.09},{"BrandName":"bosal","Description":"Clamp - Exhaust 55mm - Dual Clamp","QuantityAvail":15,"Price":12.40,"ProductId":" 265-119","ListPrice":31.45},{"BrandName":"Sylvania","Description":"Bulb - Fog Light Basic Halogen H-3 - 55w Fog Light \/ H3","QuantityAvail":19,"Price":3.07,"ProductId":" 64151","ListPrice":7.24},{"BrandName":"Original Equipment","Description":"Bulb - Headlight Xenon HID \/ Koito","QuantityAvail":1,"Price":50.36,"ProductId":" D2R","ListPrice":190.43},{"BrandName":"Sylvania Automative","Description":"Bulb - Headlight Xenarc HID","QuantityAvail":2,"Price":71.90,"ProductId":" D3S","ListPrice":177.82},{"BrandName":"Sylvania Automative","Description":"Bulb - Headlight Long Life Halogen \/ 55W","QuantityAvail":4,"Price":4.63,"ProductId":" H11LL","ListPrice":22.43},{"BrandName":"LiquiMoly","Description":"Anti-Sieze","QuantityAvail":3,"Price":4.86,"ProductId":" LM 2012","ListPrice":9.42},{"BrandName":"Bosch","Description":"Fog Light NLA 10\/14","QuantityAvail":1,"Price":27.52,"ProductId":"0 305 555 002","ListPrice":57.40},{"BrandName":"Genuine","Description":"Auto Trans Fluid Honda DW-1 - 1 Quart","QuantityAvail":100,"Price":6.54,"ProductId":"08200-9008","ListPrice":8.18},{"BrandName":"No","Description":"Clamp - Hose 10-16mm","QuantityAvail":100,"Price":1.42,"ProductId":"10-16\/9","ListPrice":2.76},{"BrandName":"OEM","Description":"Fuel Tank Cap OE Equivalent","QuantityAvail":100,"Price":3.72,"ProductId":"10834","ListPrice":38.25},{"BrandName":"Sylvania","Description":"Bulb - Natural Amber","QuantityAvail":12,"Price":1.82,"ProductId":"1157NA","ListPrice":2.33},{"BrandName":"Pudenz","Description":"Fuse - Blade Type (ATC) 15 Amp -Light Blue(Mini)","QuantityAvail":10,"Price":0.79,"ProductId":"15 AMP MINI","ListPrice":1.08},{"BrandName":"Bosch","Description":"Window Wiper Blade Clear Advantage 22\"","QuantityAvail":8,"Price":7.57,"ProductId":"22CA","ListPrice":26.10},{"BrandName":"Bosal","Description":"Muffler Rear-ProSport Universal NLA 1\/12","QuantityAvail":0,"Price":43.56,"ProductId":"247-210","ListPrice":160.18},{"BrandName":"Bosal","Description":"Muffler Rear-ProSport Universal","QuantityAvail":1,"Price":57.25,"ProductId":"247-212","ListPrice":202.84},{"BrandName":"Bosch","Description":"Window Wiper Blade Clear Advantage 24\"","QuantityAvail":10,"Price":8.99,"ProductId":"24CA","ListPrice":31.26},{"BrandName":"Bosal","Description":"EXHAUST FLEX REPAIR KIT","QuantityAvail":1,"Price":20.23,"ProductId":"265-707","ListPrice":49.24},{"BrandName":"Bosal","Description":"Clamp - Exhaust","QuantityAvail":4,"Price":14.73,"ProductId":"265-827","ListPrice":30.88},{"BrandName":"Bosch","Description":"Window Wiper Blade Clear Advantage 26\"","QuantityAvail":8,"Price":8.67,"ProductId":"26CA","ListPrice":31.26},{"BrandName":"OEM","Description":"CVT Fluid-Import Model H 1 Quart","QuantityAvail":17,"Price":5.55,"ProductId":"3072-300","ListPrice":12.71},{"BrandName":"OES","Description":"Acc.Belt Tension Pulley","QuantityAvail":0,"Price":91.06,"ProductId":"31189-5A2-A02","ListPrice":91.06},{"BrandName":"Sylvania","Description":"Bulb LongLife Mini llm","QuantityAvail":0,"Price":2.15,"ProductId":"3357 LL","ListPrice":6.99},{"BrandName":"","Description":"Light Buib","QuantityAvail":0,"Price":2.04,"ProductId":"35505-S30-003","ListPrice":3.35},{"BrandName":"DENSO","Description":"Cabin Air Filter Particulate Filter","QuantityAvail":39,"Price":10.52,"ProductId":"453-2026","ListPrice":21.65},{"BrandName":"OES","Description":"Combination Switch","QuantityAvail":1,"Price":74.47,"ProductId":"56049823AB","ListPrice":104.00},{"BrandName":"Sylvania Automative","Description":"Bulb - Headlight Basic Halogen 55W - Pack of 1","QuantityAvail":11,"Price":3.65,"ProductId":"64150","ListPrice":8.26},{"BrandName":"Sylvania Automative","Description":"Bulb - 12v","QuantityAvail":13,"Price":2.70,"ProductId":"7443","ListPrice":6.36},{"BrandName":"Original Equipment","Description":"Bulb Osram - Nickel Base","QuantityAvail":32,"Price":0.97,"ProductId":"7506","ListPrice":1.27},{"BrandName":"Sylvania","Description":"Bulb - 12v Nickel base","QuantityAvail":48,"Price":1.27,"ProductId":"7506.","ListPrice":2.65},{"BrandName":"Sylvania Automative","Description":"Bulb LongLife Mini llm","QuantityAvail":77,"Price":1.77,"ProductId":"7506L","ListPrice":3.57},{"BrandName":"Sylvania","Description":"Bulb - Amber","QuantityAvail":3,"Price":1.97,"ProductId":"7507.","ListPrice":4.18},{"BrandName":"NPN","Description":"Cabin Air Filter Particulate Filter","QuantityAvail":2,"Price":8.10,"ProductId":"80292-SDA-407","ListPrice":21.65},{"BrandName":"Koni","Description":"Strut Insert Front","QuantityAvail":2,"Price":141.28,"ProductId":"8610-1437-RACE","ListPrice":248.44},{"BrandName":"OES","Description":"Fuel Pressure Regulator GM Original Equipment","QuantityAvail":0,"Price":25.87,"ProductId":"89060523","ListPrice":42.90},{"BrandName":"Sylvania","Description":"Bulb - Headlight Basic Halogen 55W - Pack of 1","QuantityAvail":16,"Price":6.35,"ProductId":"9006","ListPrice":11.43},{"BrandName":"stone","Description":"CVT Fluid-Import Model H 1 Quart","QuantityAvail":1,"Price":0.91,"ProductId":"90471-PX4-000","ListPrice":2.80},{"BrandName":"Hella","Description":"Bulb - 12v 16w","QuantityAvail":22,"Price":0.73,"ProductId":"921","ListPrice":1.02},{"BrandName":"Ammco","Description":"Brake Silencer Pads Non-Asbestos 2-pack","QuantityAvail":0,"Price":20.99,"ProductId":"AMM9183","ListPrice":36.91},{"BrandName":"PSB","Description":"Air Line Filter Seperato 3\/8\" NPT Filter","QuantityAvail":0,"Price":83.95,"ProductId":"AST2615","ListPrice":108.69},{"BrandName":"Autel","Description":"TPMS Sensor 315MHz","QuantityAvail":0,"Price":35.99,"ProductId":"AULMXSENSOR315R","ListPrice":76.58},{"BrandName":"Sylvania","Description":"Bulb - Headlight Xenarc HID Xenon - Pack of 1","QuantityAvail":4,"Price":60.34,"ProductId":"D1S","ListPrice":89.50},{"BrandName":"Sylvania","Description":"Bulb - Headlight Basic Halogen 55W","QuantityAvail":100,"Price":6.12,"ProductId":"H-7","ListPrice":21.91},{"BrandName":"K Tool International","Description":"Drain Plug Gasket Kit 60 Piece","QuantityAvail":0,"Price":20.98,"ProductId":"KTI00009","ListPrice":25.15},{"BrandName":"Lincoln Lube","Description":"Oil Meter Metered Control Handle","QuantityAvail":0,"Price":503.21,"ProductId":"LIN877","ListPrice":860.33},{"BrandName":"LiquiMoly","Description":"Motor Oil Synthoil 5W-40 - 5 Ltr","QuantityAvail":7,"Price":29.79,"ProductId":"LM 2041","ListPrice":44.51},{"BrandName":"Bilstein","Description":"Nut 8x12mm - Copper Clad Copper","QuantityAvail":20,"Price":0.68,"ProductId":"NSS 8 X 12","ListPrice":0.51},{"BrandName":"Newco","Description":"Seal Ring - Aluminum","QuantityAvail":8,"Price":0.78,"ProductId":"RAL 18 X 24","ListPrice":1.72},{"BrandName":"Oirino","Description":"Seal Ring - Copper","QuantityAvail":97,"Price":0.49,"ProductId":"RCS 12 X 16","ListPrice":2.80},{"BrandName":"No","Description":"Seal Ring - Copper","QuantityAvail":3,"Price":0.67,"ProductId":"RCS 16 X 22","ListPrice":1.75},{"BrandName":"VAICO","Description":"Rivet Black","QuantityAvail":100,"Price":1.08,"ProductId":"V10-2039","ListPrice":5.40}]
+
+    }]);
+    
+</script>
+
+
+
+
+      </div>
+    </header>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+
+  </body>
+
+</html>
+       
+             
+  
